@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Tatsunori teramoto's profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head >
+<header>
+ <div class="header_name">Tatsunori Teramoto's profile<div>
+</header>
+<body>
+
+  <div id="app">
+  <div class="top-wrapper">
+    <h1 class = "name">{{ message }}</h1>
+
+    <video src="profile_movie3.mp4" class="profile_movie" autoplay muted loop ></video>
+  </div>
+</div>
+
+  <div class="career">
+    <transition >
+      <div class="profile_left">
+        <img src="profile.jpg" class="profile_image" v-on:click="kaiten" >
+        <h2 class="profile_name">寺本 達紀</h2>
+      </div>
+   </transition>
+     <ul>
+       <li>1997年9月16日生まれ</li>
+       <li>2016年 浦和西高校 卒業</li>
+       <li>2020年 芝浦工業大学 システム理工学部 生命科学科 卒業</li>
+       <li>2020年 株式会社メディロム入社</li>
+       <li>2020年9月 ベルエポック草加店 店長就任</li>
+     </ul>
+  </div>
+
+  <div id="app2">
+  <div class="why_medirom_wrapper">
+    <div class="why_medirom">
+    <h2 @click="toggle('1')" class="btn_why_medirom">why join the Medirom?</h2>
+     <transition name="motion">
+    <div v-show="show_contents.indexOf('1') >= 0">
+      <h3>Empathy for the vision</h3>
+        <p>大学で生命科学を学び、病気になる前の予防こそが大切だと考えました。</p>
+        <p>そこで、予防から治療まで一貫したプラットフォームを創るという、会社のビジョンに共感しました。</p>
+      <h3>Empathy for the principle</h3>
+        <h4>「愛を与えられる魅力的な人材を育成する」</h4>
+        <p>人と人が想いやりをもって接することでより良い世の中にできるのではないかと考えました。</P>
+      <h3></h3>
+    </div>
+  </transition>
+  </div>
+  </div>
+  <div class="hobby_wrapper">
+    <div class="hobby">
+    <h2 @click="toggle('2')" class="hobby_btn">hobby</h2>
+    <transition name="motion">
+    <div  v-show="show_contents.indexOf('2') >= 0">
+      <h3>trampoline</h3>
+        <p>小4から高３まで器械体操に励みました。今でもアクロバットを定期的にしたくなります。</p>
+        <p>そんなときは、トランポリン施設に！是非、皆さん一緒にいきましょう☆</p>
+     <h3>fishing</h3>
+        <p>小学校のときは親戚のおじちゃんとよく川で釣りにいっていました。</p>
+        <p>その影響もあり、今でも釣りが好きです。最近は海釣りに。趣味といいつつ最近はあまりいけてないのでほぼ釣り初心者です。</p>
+        <p>一緒にいきましょう！車は出します。</p>
+     <h3>stay home</h3>
+        <p>上記の趣味２つでアクティブだと思われたかもしれませんが、何も予定がなければ極力家からでたくないです。</p>
+        <p>本読んだり、プログラミング勉強したり、音楽聞いたりと家で過ごすのが好きです。</p>
+        <P>何かに集中すると普段考えていること(仕事のことなど)から一度離れられるのでおススメです。</p>
+        <p>と言いつつ、夜は友達と飲み歩きたいです(コロナめ、、、)。</p>
+    </div>
+  </transition>
+  </div>
+  </div>
+  <div class="overseas_wrapper">
+    <div class="overseas">
+    <h2 @click="toggle('3')" class="overseas_btn">overseas</h2>
+    <transition name="motion">
+    <div v-show="show_contents.indexOf('3') >= 0">
+    <P>なんだかんだ海外には結構いっています(ただし英語はあまり話せない)</p>
+      <h3>America</h3>
+        <p>大学2年の春、大学の留学プログラムで1カ月間アメリカ(カルフォルニア)へ</p>
+        <p>とにかく楽しかったです(語彙力)。まわりに日本人がいる環境だったので、苦はなく楽しく過ごせました。</p>
+    <h3>Malaysia</h3>
+      <p>大学のグローバルPBLなるものに参加しました(10日くらい)。</p>
+      <p>現地の学生と一緒に研究をするような内容です。</p>
+      <p>とにかくマレーシア人が優しく良い人たちでした。イスラム教って怖そうな印象でしたが、全然ことないです。</p>
+      <p>なんといってもマレーシアは旅行代も物価も安いのでおすすめです。</p>
+    <h3>France,Italy</h3>
+      <p>これは卒業旅行！</p>
+      <p>コロナ流行のギリギリラインでいけました</p>
+      <p>時々差別されましたが、楽しかったです(語彙力)</p>
+    </div>
+   </transition>
+   </div>
+ </div>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="profile.js"></script>
+</body>
+
+<footer>
+  <p>Tatsunori Teramoto's profile</p>
+</footer>
+</html>

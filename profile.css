@@ -1,0 +1,135 @@
+
+header {
+    background-color: rgba(34,49,52,0.5);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.header_name{
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+body{
+  background-color: #EEEEEE	;
+}
+
+.top-wrapper{
+  height: 750px;
+  position: relative;
+}
+  .name{
+    color: skyblue;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+  }
+
+.profile_movie{
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.profile-move{
+  transition: 0.8s;
+  transform: rotate(360deg);
+}
+
+.career{
+  margin-top: 50px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1%;
+  margin-bottom: 80px;
+  margin-left: 70px;
+}
+
+.profile_left{
+    float: left;
+}
+.profile_image{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.profile_name{
+  text-align: center;
+}
+
+
+ .career ul{
+   list-style: none;
+   font-size: 25px;
+   line-height: 2.0;
+}
+
+.btn_why_medirom{
+  cursor: pointer;
+  margin-top: 50px;
+}
+.why_medirom_wrapper{
+  background-color: skyblue;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+
+}
+.why_medirom{
+  margin-left: 20px;
+}
+
+
+.hobby_wrapper{
+  margin-top: 50px;
+  background-color: skyblue;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+.hobby{
+  margin-left: 20px;
+}
+.hobby_btn{
+  cursor: pointer;
+}
+
+.overseas_wrapper{
+  margin-top: 50px;
+  background-color: skyblue;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+.overseas{
+  margin-left: 20px;
+}
+.overseas_btn{
+  cursor: pointer;
+}
+
+.motion-enter-active{
+      transition: opacity 5s;
+}
+
+.motion-enter{
+      opacity: 0;
+}
+
+
+footer p{
+  margin-top: 100px;
+  text-align: center;
+}
