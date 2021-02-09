@@ -20,6 +20,7 @@ body{
 .top-wrapper{
   height: 750px;
   position: relative;
+  margin-bottom: 20px;
 }
   .name{
     color: skyblue;
@@ -38,6 +39,7 @@ body{
   width: 100%;
   height: auto;
   opacity: 0.2;
+  margin-bottom: 20px;
 }
 
 .profile-move{
@@ -128,6 +130,9 @@ body{
       opacity: 0;
 }
 
+.mini_group{
+  padding-bottom: 5px;
+}
 
 footer p{
   margin-top: 100px;
